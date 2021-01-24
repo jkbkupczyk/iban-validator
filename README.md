@@ -1,3 +1,5 @@
+<h1 align="center">💳</h1>
+
 # iban-validator
 Quick and easy way to validate you IBAN
 
