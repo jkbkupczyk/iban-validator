@@ -32,6 +32,6 @@ Base URL for validation: https://iban-validator.herokuapp.com/api
 | countryISO       | String        | Country ISO ex. DE for Germany |
 | country          | String        | Country name |
 | valid            | bool          | Validated IBAN |
-| timestamp        | Timestamp     | Timestamp |
+| timestamp        | Timestamp     | Timestamp of validation |
 
 ---
