@@ -1,9 +1,10 @@
-<h1 align="center">💳</h1>
-
 # iban-validator
-Quick and easy way to validate you IBAN
+### Quick and easy way to validate you IBAN
 
-## IBAN Validation
+
+
+
+## IBAN Validation - Dev docs
 
 To validate your IBAN just simply make `GET` request at endpoint `api` with query param `?iban={YOUR_IBAN}`! 
 
@@ -37,3 +38,8 @@ Base URL for validation: https://iban-validator.herokuapp.com/api
 | timestamp        | Timestamp     | Timestamp of validation |
 
 ---
+
+### How to get?
+```git
+  $ git clone https://github.com/jkbkupczyk/iban-validaator
+```
