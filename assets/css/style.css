@@ -1,0 +1,157 @@
+@import url("https://fonts.google.com/specimen/Poppins");
+* {
+    color: #121212;
+}
+
+::selection {
+    background: #3c3caa;
+    color: aliceblue;
+}
+
+::-moz-selection {
+    background: #3c3caa;
+    color: aliceblue;
+}
+
+body {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    font-family: "Poppins", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    margin: 3rem 0;
+    font-size: 3rem;
+}
+
+.hint {
+    font-size: 1.33rem;
+    margin-bottom: 0;
+}
+
+input[type=text] {
+    margin: 0;
+    outline: none;
+    background-color: rgb(247, 247, 247);
+    padding: 0.5rem;
+    width: 45%;
+}
+
+input[type=text]:not(:placeholder-shown):invalid {
+    color: red;
+}
+
+.sub-bttn {
+    padding: 1rem;
+    background-color: #00823b;
+    color: aliceblue;
+    text-transform: uppercase;
+    font-weight: 550;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 14px;
+}
+
+.sub-bttn:hover {
+    background-color: #039746;
+    transition: all 300ms ease-in;
+}
+
+.data {
+    display: flex;
+    text-align: center;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 1.25rem;
+}
+
+.table-header {
+    background-color: rgb(247, 247, 247);
+}
+
+.info-table {
+    margin-top: 5rem;
+    display: none;
+    overflow-x: auto;
+}
+
+.invalid-iban {
+    margin-top: 5rem;
+    display: none;
+    overflow-x: auto;
+}
+
+.validation-img {
+    color: #039746;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+.sum-up {
+    text-align: left;
+    justify-content: left;
+}
+
+table {
+    margin-bottom: 1rem;
+    color: #212223;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table td, table th {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+}
+
+.about-iban {
+    margin-top: 4rem;
+    width: 65%;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(247, 247, 247);
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.heart {
+    color: crimson;
+    font-size: larger;
+}
+
+footer a {
+    text-decoration: none;
+    color: #555555;
+}
+
+footer a:hover {
+    color: #122112;
+    transition: all 400ms ease;
+}
+
+@media screen and (max-width: 768px) {
+    input[type=text] {
+        width: 75%;
+    }
+    .info-table {
+        margin-top: 1rem;
+    }
+    .about-iban {
+        margin-top: 1rem;
+    }
+}

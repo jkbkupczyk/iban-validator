@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#000" />
+    <meta name="description" content="Quick and easy way to validate your IBAN!" />
+    <meta name="author" content="Jakub Kupczyk">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="pl_PL">
+    <meta property="og:title" content="IBAN Validator">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Quick and easy way to validate your IBAN!">
+    <meta property="og:site_name" content="IBAN Validator">
+    <meta property="og:url" content="iban-validator.herokuapp.com/">
+
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💳</text></svg>">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>IBAN Validator</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>IBAN Validator</header>
+
+        <main>
+            <p class="hint">Ex. PL94109024021696142279144242</p>
+            <div class="form">
+                <input type="text" name="iban" id="iban-input" placeholder="Type IBAN..." autofocus>
+                <button class="sub-bttn">Check IBAN</button>
+            </div>
+
+            <div class="data">
+                <section class="invalid-iban">
+                    <p>
+                        <strong></strong>
+                        is
+                        <span class="invalid-img">❌</span>
+                        <strong class="is-invalid"></strong>
+                    </p>
+                </section>
+
+                <section class="info-table">
+                    <table>
+                        <tbody>
+                            <tr class="table-header">
+                                <th colspan="2">
+                                    <span class="sum-up">
+                                        <strong></strong>
+                                        is
+                                        <span class="validation-img">✔</span>
+                                        <strong class="is-valid"></strong>
+                                    </span>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>IBAN</strong>
+                                </td>
+                                <td class="data-iban"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Country</strong>
+                                </td>
+                                <td class="data-country"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Country ISO</strong>
+                                </td>
+                                <td class="data-iso"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Valid</strong>
+                                </td>
+                                <td class="data-valid"></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>Timestamp</strong>
+                                </td>
+                                <td class="data-timestamp"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="about-iban">
+                    IBAN ( International Bank Account Number ) validation through control digits is used as an effective
+                    way of reducing failed transactions when processing international and domestic payments.
+                    By verifying the correct BIC code in combination with a valid IBAN, you can ensure effective
+                    routing of the payment to the recipient bank.
+                </section>
+            </div>
+        </main>
+
+        <footer>
+            <p>Created with <span class="heart">&#10084;</span> by
+                <a href="https://github.com/jkbkupczyk" target="_blank" rel="noopener noreferrer">Jakub Kupczyk</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
