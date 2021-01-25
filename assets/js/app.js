@@ -1,6 +1,6 @@
 const iban = document.querySelector("#iban-input");
 
-const URL = `http://localhost:8000/api/index.php?iban=`;
+const URL = `http://iban-validator-release.herokuapp.com/api?iban=`;
 
 const fetchResult = () => {
     fetch(URL + iban.value)
