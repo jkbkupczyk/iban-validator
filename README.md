@@ -1,7 +1,7 @@
 # iban-validator
 ### Quick and easy way to validate you IBAN
 
-
+#### Just visit http://iban-validator-release.herokuapp.com/
 
 
 ## IBAN Validation - Dev docs
