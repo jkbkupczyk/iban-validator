@@ -44,5 +44,5 @@ Base URL for validation: https://iban-validator.herokuapp.com/api
 
 ### How to get?
 ```git
-  $ git clone https://github.com/jkbkupczyk/iban-validaator
+  $ git clone https://github.com/jkbkupczyk/iban-validator
 ```
